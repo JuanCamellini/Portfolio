@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Resume Camellini Juan</title>
+        <link rel="icon" type="image/x-icon" href="{% static 'web/assets/img/favicon.ico' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'web/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Camellini Juan</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{% static 'web/assets/img/profile.jpg' %}" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    {% block nav %}
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    {% endblock %}
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Camellini
+                        <span class="text-primary">Juan</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        B1834 Turdera · Buenos Aires, Argentina · (+54) 11 4974-3546 ·
+                        <a href="juantomascamellini@gmail.com">juantomascamellini@gmail.com</a>
+                    </div>
+                    {% block content %}
+                    
+                    {% endblock %}
+                
+                    {% block profile %}
+                    <p class="lead mb-5">
+                        I am an experienced backend developer in web apps, in creating APIs and using frameworks from Python like Django, to provide a simple, aesthetic, efficient code.
+                        <br>
+                        Continuosly learning about the new  technologies and frameworks, to improve my skills and be able to provide the best solutions to the problems.
+                        <br>
+                    {% endblock %}
+                    </p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/juan-camellini-919345240/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/JuanCamellini?tab=repositories"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+
+                </div>
+                {% block general %}
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Projects</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><a href="#">Weather Application</a></h3>
+                            <div class="subheading mb-3">Weather Forecast</div>
+                            <p>An application that gives you weather data for the next 7 days indicating the name of the city, takes requests from the openweather API and has live cameras in different parts of the world.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">December 2022 </span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><a href="https://astroblog-proyecto.herokuapp.com/">Astroblog - Blog Page</a></h3>
+                            <div class="subheading mb-3">CoderHouse Django Course</div>
+                            <p>Web page style blog where you can find Posts about astronomy, if you are a you user can comment, like and send messages with other users.
+                                Authentication Login/Register with email and password, creating and using APIs with Django Rest Framework, using Bootstrap and CSS for the design.
+                            </p>
+                            <a href="https://astroblog-proyecto.herokuapp.com/"></a>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2022</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <a href="#about"><h3 class="mb-0">Web Developer</h3></a>
+                            <div class="subheading mb-3">My Portfolio</div>
+                            <p>My own page, designed to introduce yourself my knowledge, projects, and ambitions.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2022</span></div>
+                    </div>
+                    
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">App Developer</h3>
+                            <div class="subheading mb-3">Public Transport App</div>
+                            <p>An application for the users in Argentina, shows the state actual from trains, subways and buses. Using Moovit API and Gobierno de la Ciudad Transporte Público API.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Coming soon... </span></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Universidad Abierta Interamericana (UAI)</h3>
+                            <div class="subheading mb-3">Bachelor of Engineering</div>
+                            <div>Systems Engineering</div>
+                            <p>1st year</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">December 2022 - November 2027 (expectations)</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">University of Buenos Aires (UBA)</h3>
+                            <div class="subheading mb-3">Bachelor of Engineering</div>
+                            <div>Computer Engineering</div>
+                            <p>GPA: 2.95</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">May 2022 - December 2022</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-python"></i></li>                        
+                        <li class="list-inline-item"><i class="fab fa-git"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-github"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-docker"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-bootstrap"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
+                        <li class="list-inline-item"><i class="fas fa-database"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-git-alt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-linux"></i></li>
+                    </ul>
+                    <div class="subheading mb-3">Workflow</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Web Backend Development, CRUD & Agile Methodologies
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Cross Browser Testing & Debugging
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Smart & Optimized Code
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Creative Problem Solving & Teamwork
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests</h2>
+                    <p>Apart from being a web backend developer, I enjoy travelling to nature, La Patagonia and mountains. Also staying in contact with my family and friends. 
+                        I love reading books about programming and learn new things all the time.</p>
+                    <p class="mb-0">About my expectations in my career I would like to earn experience from the Leaders and Programmers Experts,
+                        enjoying a good work environment and being able to communicate with co-workers, and posibilities of scaling within the company.</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            CoderHouse Python Certified Developer
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Backend Web Specialist - Platzi Certification
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            CoderHouse Django Certified Developer
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            CoderHouse MySQL Stack Developer
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Docker Specialist - Platzi Certification
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Amazon Web Services Certified Cloud Practitioner
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Devops Specialist - Platzi Certification
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Arquitectura de Software - Platzi Certification
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="resume-section" id="contact" >
+                <div class="resume-section-content" >
+                    <h2 class="mb-5">Contact</h2>
+                    <form method="POST">
+                        <div class="form-group">
+                        <fieldset class="form-group">
+                            <form action="https://formsubmit.co/juantomascamellini@gmail.com" method="POST" >
+                                <input type="hidden" name="_subject" value="New submission!">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" name="email" placeholder="Email Address" label="Enter your email:" style="border-radius: 5px; width: 500px" required><br>
+                                <i class="fas fa-comment-alt" ></i>
+                                <input type="text" name="message" placeholder="Write your message here ..." label="Enter your message: "size="50px"  style="background: aliceblue; margin-top: 10px; min-height: 100px; display: inline-block;border-radius: 5px;" class="input-text" required>
+                                <input type="hidden" name="_text" value="{% static 'web/thanks.html' %}">
+                                <button type="submit" style="display: inline-block; margin-top: 10px; margin-left: 20px; border-radius: 5px;">Send</button> 
+                            </form>
+                        </fieldset>
+                        </div>
+                    </form>
+                    
+                    
+           
+            
+            {% endblock %}
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="web/js/scripts.js"></script>
+    </body>
+</html>
